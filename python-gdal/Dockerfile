@@ -1,4 +1,4 @@
-FROM python:3.7.10-buster
+FROM python:3.8.12-buster
 
 # Be able to install packages non-interactively
 ARG DEBIAN_FRONTEND=noninteractive
@@ -10,7 +10,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends apt-utils
 RUN apt-get update && apt-get install -y \
         ssh \
         rsync \
-        libgeos-3.7.1 node-proj4 libjs-proj4 gdal-bin python-gdal python3-gdal libgdal-dev
+        libgeos-3.9.0 node-proj4 libjs-proj4 gdal-bin python-gdal python3-gdal libgdal-dev
 
 # upgrade pip
 RUN pip install --upgrade pip
