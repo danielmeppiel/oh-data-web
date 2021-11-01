@@ -10,7 +10,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends apt-utils
 RUN apt-get update && apt-get install -y \
         ssh \
         rsync \
-        libgeos-3.9.0 node-proj4 libjs-proj4 gdal-bin python-gdal python3-gdal libgdal-dev
+        libgeos-3.9.0-1 node-proj4 libjs-proj4 gdal-bin python-gdal python3-gdal libgdal-dev
 
 # upgrade pip
 RUN pip install --upgrade pip
