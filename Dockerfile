@@ -1,4 +1,4 @@
-FROM gcr.io/divine-engine-326620/pygdal:latest
+FROM europe-west6-docker.pkg.dev/$PROJECT_ID/ohd-repo/pygdal:latest
 
 WORKDIR /app
 
