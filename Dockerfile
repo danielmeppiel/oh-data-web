@@ -1,4 +1,4 @@
-FROM europe-west6-docker.pkg.dev/$PROJECT_ID/ohd-repo/pygdal:latest
+FROM europe-west6-docker.pkg.dev/divine-engine-326620/ohd-repo/pygdal:latest
 
 WORKDIR /app
 
