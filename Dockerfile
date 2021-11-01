@@ -4,7 +4,7 @@ WORKDIR /app
 
 # Get pipenv installed and pipfiles copied
 RUN pip install pipenv
-COPY Pipfile* /app/Pipfile
+COPY Pipfile* /app/
 
 # install python dependencies
 RUN pipenv lock --keep-outdated --requirements > requirements.txt
