@@ -2,10 +2,12 @@ FROM gcr.io/divine-engine-326620/pygdal:latest
 
 WORKDIR /app
 
-# add requirements.txt to the image
-COPY requirements.txt /app/requirements.txt
+# Get pipenv installed and pipfiles copied
+RUN pip install pipenv
+COPY Pipfile* /app/Pipfile
 
 # install python dependencies
+RUN pipenv lock --keep-outdated --requirements > requirements.txt
 RUN pip install -r requirements.txt
 
 COPY . /app/

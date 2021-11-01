@@ -1,0 +1,14 @@
+{
+	"folders": [
+		{
+			"path": "../origin"
+		},
+		{
+			"path": "."
+		},
+		{
+			"path": "../defrost"
+		}
+	],
+	"settings": {}
+}
