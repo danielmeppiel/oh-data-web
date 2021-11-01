@@ -8,6 +8,9 @@
 		},
 		{
 			"path": "../defrost"
+		},
+		{
+			"path": "../pygdal"
 		}
 	],
 	"settings": {}
